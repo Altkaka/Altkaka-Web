@@ -1,0 +1,18 @@
+{% extends '__base__.html' %}
+
+{% block title %}日志{% endblock %}
+
+{% block content %}
+	
+	<div class="uk-width-medium-3-4">
+		 <article class="uk-ariticle">
+		 	<h2><a href="/blog/{{ blog.id }}">{{ blog.name }}</a></h2>
+		 	<p class="uk-ariticle-meta">发表于{{ blog.created_at|datetime }}</p>
+		 	{% for content in blog.content %}
+                <p>{{ content }}</p>
+            {% endfor %}
+		 </article>
+		 <hr class="uk-ariticle-divider">
+	</div>
+
+{% endblock %}

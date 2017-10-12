@@ -1,0 +1,17 @@
+/*
+ * custom css
+ */
+a:hover, a:active {
+    text-decoration: none;
+}
+
+#vm {
+    margin-bottom: 15px;
+    /*display: none;*/
+}
+#loading {
+    margin-bottom: 15px;
+}
+#error {
+    margin-bottom: 15px;
+}
